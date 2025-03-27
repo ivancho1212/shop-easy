@@ -1,54 +1,86 @@
-# React + TypeScript + Vite
+# Shop Easy - React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto basado en React, TypeScript y Vite, diseñado para proporcionar una experiencia ágil y eficiente en el desarrollo de aplicaciones web modernas.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://react.dev/) - Biblioteca para construir interfaces de usuario.
+- [TypeScript](https://www.typescriptlang.org/) - Superconjunto de JavaScript con tipado estático.
+- [Vite](https://vitejs.dev/) - Herramienta de desarrollo rápida para aplicaciones modernas.
+- [Bootstrap](https://getbootstrap.com/) - Framework CSS para diseño responsivo y estilizado.
+- [ESLint](https://eslint.org/) - Linter para mantener código limpio y libre de errores.
 
-## Expanding the ESLint configuration
+## 📂 Estructura del Proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+shop-easy/
+│-- public/               # Archivos estáticos
+│-- src/
+│   │-- components/       # Componentes reutilizables
+│   │-- pages/            # Páginas principales de la app
+│   │-- hooks/            # Hooks personalizados
+│   │-- styles/           # Archivos CSS/SASS
+│   ├── App.tsx           # Componente principal
+│   ├── main.tsx          # Punto de entrada de la aplicación
+│-- package.json          # Dependencias y scripts
+│-- vite.config.ts        # Configuración de Vite
+│-- tsconfig.json         # Configuración de TypeScript
+│-- .eslintrc.js          # Configuración de ESLint
+│-- README.md             # Documentación del proyecto
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Instalación y Configuración
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 1️⃣ Clonar el Repositorio
+```bash
+git clone https://github.com/ivancho1212/shop-easy.git
+cd shop-easy
 ```
+
+### 2️⃣ Instalar Dependencias
+```bash
+npm install
+```
+
+### 3️⃣ Ejecutar el Proyecto
+```bash
+npm run dev
+```
+
+La aplicación estará disponible en `http://localhost:5173/` por defecto.
+
+## 🎨 Uso de Bootstrap
+
+Este proyecto usa Bootstrap para los estilos. Puedes importar Bootstrap en `src/main.tsx`:
+
+```tsx
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+También puedes instalarlo si aún no lo has hecho:
+```bash
+npm install bootstrap
+```
+
+## ✅ Buenas Prácticas
+- Usa TypeScript para mantener un código tipado.
+- Sigue la estructura modular de componentes.
+- Usa ESLint para evitar errores de código.
+- Mantén el código limpio y documentado.
+
+## 🤝 Contribución
+Si deseas contribuir, haz un fork del repositorio, crea una rama y envía un pull request con tus mejoras.
+
+1. Fork del proyecto.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m "Agregada nueva funcionalidad"`).
+4. Sube los cambios (`git push origin feature/nueva-funcionalidad`).
+5. Abre un pull request en GitHub.
+
+## 📝 Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+🚀 ¡Gracias por contribuir a Shop Easy! 🎉
