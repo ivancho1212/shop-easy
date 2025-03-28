@@ -36,18 +36,18 @@ export default function Home() {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center text-primary mb-4">Lista de Publicaciones</h1>
       <SearchBar onSearch={handleSearch} />
 
       {loading ? (
-        <div className="d-flex justify-content-center mt-4">
-          <div className="spinner-border text-primary" role="status">
-            <span className="visually-hidden">Cargando...</span>
-          </div>
-        </div>
-      ) : (
-        <PostList posts={filteredPosts} />
-      )}
+  <div className="loading-container">
+    <div className="spinner-border text-primary" role="status">
+      <span className="visually-hidden">Cargando...</span>
+    </div>
+  </div>
+) : (
+  <PostList posts={filteredPosts} />
+)}
+
     </div>
   );
 }

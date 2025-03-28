@@ -1,6 +1,6 @@
 # Shop Easy - React + TypeScript + Vite
 
-Este es un proyecto basado en React, TypeScript y Vite, diseñado para proporcionar una experiencia ágil y eficiente en el desarrollo de aplicaciones web modernas.
+Este es un proyecto basado en **React, TypeScript y Vite**, diseñado para proporcionar una experiencia ágil y eficiente en el desarrollo de aplicaciones web modernas.
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -10,26 +10,26 @@ Este es un proyecto basado en React, TypeScript y Vite, diseñado para proporcio
 - [Bootstrap](https://getbootstrap.com/) - Framework CSS para diseño responsivo y estilizado.
 - [ESLint](https://eslint.org/) - Linter para mantener código limpio y libre de errores.
 
-## 📂 Estructura del Proyecto
+## 📋 Requisitos Previos
 
-```
-shop-easy/
-│-- public/               # Archivos estáticos
-│-- src/
-│   │-- components/       # Componentes reutilizables
-│   │-- pages/            # Páginas principales de la app
-│   │-- hooks/            # Hooks personalizados
-│   │-- styles/           # Archivos CSS/SASS
-│   ├── App.tsx           # Componente principal
-│   ├── main.tsx          # Punto de entrada de la aplicación
-│-- package.json          # Dependencias y scripts
-│-- vite.config.ts        # Configuración de Vite
-│-- tsconfig.json         # Configuración de TypeScript
-│-- .eslintrc.js          # Configuración de ESLint
-│-- README.md             # Documentación del proyecto
+Antes de instalar y ejecutar el proyecto, asegúrate de tener instalado:
+
+- [Node.js](https://nodejs.org/) (versión recomendada: 18 o superior)
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
+
+Puedes verificar tu versión de Node.js con:
+
+```bash
+node -v
 ```
 
-## 🛠 Instalación y Configuración
+Y de npm con:
+
+```bash
+npm -v
+```
+
+## 🛠 Instalación y Ejecución
 
 Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local.
 
@@ -44,14 +44,29 @@ cd shop-easy
 npm install
 ```
 
-### 3️⃣ Ejecutar el Proyecto
+### 3️⃣ Configuración (Opcional)
+Si el proyecto requiere variables de entorno, asegúrate de crear un archivo `.env` con la configuración necesaria.
+
+Ejemplo de `.env`:
+```
+VITE_API_URL=https://api.ejemplo.com
+```
+
+### 4️⃣ Ejecutar el Proyecto
 ```bash
 npm run dev
 ```
-
 La aplicación estará disponible en `http://localhost:5173/` por defecto.
 
-## 🎨 Uso de Bootstrap
+### 5️⃣ Construir para Producción
+Para generar una versión optimizada del proyecto, ejecuta:
+
+```bash
+npm run build
+```
+Esto generará los archivos en la carpeta `dist/`, listos para desplegar en un servidor.
+
+## 🌟 Uso de Bootstrap
 
 Este proyecto usa Bootstrap para los estilos. Puedes importar Bootstrap en `src/main.tsx`:
 
@@ -59,28 +74,42 @@ Este proyecto usa Bootstrap para los estilos. Puedes importar Bootstrap en `src/
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
-También puedes instalarlo si aún no lo has hecho:
+Si aún no lo tienes instalado, puedes hacerlo con:
 ```bash
 npm install bootstrap
 ```
 
 ## ✅ Buenas Prácticas
+
 - Usa TypeScript para mantener un código tipado.
 - Sigue la estructura modular de componentes.
 - Usa ESLint para evitar errores de código.
 - Mantén el código limpio y documentado.
 
 ## 🤝 Contribución
-Si deseas contribuir, haz un fork del repositorio, crea una rama y envía un pull request con tus mejoras.
 
-1. Fork del proyecto.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -m "Agregada nueva funcionalidad"`).
-4. Sube los cambios (`git push origin feature/nueva-funcionalidad`).
-5. Abre un pull request en GitHub.
+Si deseas contribuir, sigue estos pasos:
+
+1. **Haz un fork** del proyecto.
+2. Crea una nueva rama:  
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
+3. Realiza tus cambios y haz commit:  
+   ```bash
+   git commit -m "Agregada nueva funcionalidad"
+   ```
+4. Sube los cambios:  
+   ```bash
+   git push origin feature/nueva-funcionalidad
+   ```
+5. Abre un **pull request** en GitHub.
 
 ## 📝 Licencia
+
 Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
 ---
-🚀 ¡Gracias por contribuir a Shop Easy! 🎉
+
+🚀 **¡Gracias por contribuir a Shop Easy!** 🎉
+

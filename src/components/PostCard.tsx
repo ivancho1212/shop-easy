@@ -1,11 +1,21 @@
-export default function PostCard({ title, body }: { title: string; body: string }) {
-    return (
-      <div className="card shadow-sm border-0 rounded-3 h-100">
-        <div className="card-body">
-          <h5 className="card-title text-primary fw-bold">{title}</h5>
-          <p className="card-text text-muted">{body}</p>
-        </div>
+export default function PostCard({
+  title,
+  body,
+  color, // Aquí recibimos el color como prop
+}: {
+  title: string;
+  body: string;
+  color: string;
+}) {
+  return (
+    <div className="bg-white shadow-md rounded-xl p-4 transition-transform transform hover:scale-105">
+      <div className="h-40 bg-cover bg-center rounded-t-xl"></div>
+      <div className="p-4">
+        {/* Aquí aplicamos el color al título */}
+        <h3 className="font-semibold text-lg" style={{ color }}>{title}</h3>
+        <p className="text-gray-600 text-sm mt-2">{body}</p>
       </div>
-    );
-  }
-  
+      
+    </div>
+  );
+}
